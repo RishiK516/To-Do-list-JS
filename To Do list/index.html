@@ -1,0 +1,115 @@
+<!-- <i class="far fa-star fa-2x"></i> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    
+    
+    <style>
+     
+
+
+        body{
+          background-color: #e6e8e7;
+        }
+
+
+       
+
+       input[type=text]{
+           padding: 10px;
+           /* padding-right: 180px; */
+           font-size: 15px;
+           width:30%;
+           border-radius: 8px;
+           border: 1px solid rgb(104, 76, 76);
+           margin-top: 20px;
+           margin-left:40px ;
+        }
+
+        button{
+          border-radius: 5px;
+          border: 1px solid black;
+        }
+
+        .container{
+          margin-top: 10vh;
+        }
+
+        .col{
+          margin: 5px;
+          text-align: center;
+        }
+
+        ul{
+          background-color: #f3f3f3;
+        }
+
+        li{
+         list-style: none;
+         background-color: bisque;
+         text-align: center;
+         margin: 2px;
+        }
+
+        h4{background-color: #81cfd1;
+        font-weight:normal;
+        font-size: 20px;
+        }
+        
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+      <div class="form">
+         <input id="input" type="text" autocomplete="off" placeholder="Add a to-do...">
+         <button onclick="main()">Main</button>
+         <button onclick="starred()">Starred</button>
+         <button onclick="notimp()">Not important</button>
+      </div>
+
+         <div class="container">
+          <div class="row">
+            <div class="col main">            
+              <ul id="output">
+                <h4>Main</h4>
+              </ul>
+            </div>
+            <div class="col starred">
+              <ul id="output2">
+                <h4>starred</h4>
+              </ul>
+            </div>
+            <div class="col notimp">
+              <ul id="output3">
+                <h4>Not important</h4>
+              </ul>
+            </div>
+          </div>
+        </div>  
+
+
+        <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
